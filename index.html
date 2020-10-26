@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-sp.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="form">
+        <div class="form-inner">
+            <h2>お問い合わせ</h2>
+            <form action="confirm.php" method="POST" name="form1" onsubmit="return check()">
+                <div class="form-item">
+                    <div class="label">
+                        <p>店舗名もしくは会社名<span>必須</span></p>
+                    </div>
+                    <div class="input">
+                        <input type="text" class="organization" name="organization" id="organization">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>担当者名<span>必須</span></p>
+                    </div>
+                    <div class="input">
+                        <input type="text" class="username" name="name" id="username">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>担当者名(ふりがな)<span>必須</span></p>
+                    </div>
+                    <div class="input">
+                        <input type="text" class="name-kana" name="name-kana" id="name-kana">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>郵便番号<span>必須</span></p>
+                    </div>
+                    <div class="input">
+                        <input type="number" class="postal-code" name="postal-code" id="postal-code"> 
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>住所<span>必須</span></p>
+                    </div>
+                    <div class="input">
+                        <input type="text" class="addess" name="address" id="addess">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>電話番号<span>必須</span></p>
+                    </div>
+                    <div class="input">
+                        <input type="tel" class="number" name="number" id="number">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>メールアドレス</p>
+                    </div>
+                    <div class="input">
+                        <input type="email" class="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="label">
+                        <p>ご質問・ご相談</p>
+                    </div>
+                    <div class="textarea">
+                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="ご質問、ご相談等あればご記載ください"></textarea>
+                    </div>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox"><span>すぐに商談したい</span>
+                    <input type="checkbox"><span>サンプルを送付希望</span>
+                </div>
+                <input type="hidden" id="token" name="token" value="1234567">
+                <div class="sub-btn">
+                    <input type="submit" value="送信する">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
